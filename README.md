@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="Conrad_Logo.jpg" alt="Logo do Conrad" width="700"/>
+</p>
+
 # Conrad - Seu Assistente Pessoal de Aprendizado com IA 🧠✨
 
 **Conrad é um chatbot inteligente projetado para ser um companheiro de aprendizado, utilizando o poder da API Gemini do Google para fornecer explicações claras, engajadoras e personalizadas sobre uma vasta gama de tópicos.**
