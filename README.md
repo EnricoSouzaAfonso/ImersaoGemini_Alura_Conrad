@@ -66,3 +66,5 @@ O foco principal é ensinar de forma simples e aprofundada, evitando jargões t�
 
 ### Feito por Enrico Souza Afonso no dia 17/05/2025.
 ### Durante a Imersão Gemini da Alura.
+Este projeto está licenciado sob a Creative Commons CC-BY-NC 4.0. Saiba mais [aqui](https://creativecommons.org/licenses/by-nc/4.0/).
+
