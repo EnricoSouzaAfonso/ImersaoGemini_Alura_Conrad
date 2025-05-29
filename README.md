@@ -63,8 +63,15 @@ O foco principal é ensinar de forma simples e aprofundada, evitando jargões t�
 5.  **Inicie o Chat (Restante da Célula 4):**
     *   Execute a célula que contém o loop `while True:` para começar a interagir com o Conrad.
     *   Digite suas perguntas e explore os tópicos! Para sair, digite "fim".
+  
+## 📜 **Histórico de Versões (Changelog):**
+
+Para um detalhamento de todas as mudanças, novas funcionalidades e correções em cada versão do Conrad, 
+por favor consulte meu arquivo [**CHANGELOG.md**](CHANGELOG.md)
 
 ### Feito por Enrico Souza Afonso no dia 17/05/2025.
 ### Durante a Imersão Gemini da Alura.
+
+### 📄 Licença
 Este projeto está licenciado sob a Creative Commons CC-BY-NC 4.0. Saiba mais [aqui](https://creativecommons.org/licenses/by-nc/4.0/).
 
