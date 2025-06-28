@@ -5,6 +5,21 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
+## [1.5.0] - 28/06/2025
+
+### Adicionado
+- **Interface de Chat Reconstruída com `ipywidgets`:** A UI foi completamente refeita para ser mais robusta, interativa e nativa do ambiente Jupyter/Colab, com melhor controle de layout e componentes como área de texto auto-redimensionável.
+- **Blocos de Código Interativos:** As respostas com código agora possuem:
+    - **Syntax Highlighting** aprimorado e indicação visual da linguagem.
+    - Botões para **Copiar** e **Baixar** o código diretamente.
+- **Contador de Tokens de Contexto:** Um contador visível na UI que ajuda o usuário (e o Conrad) a gerenciar o tamanho da conversa e evitar a perda de contexto.
+- **Novas Estratégias Pedagógicas (IA):** Conrad agora pode usar "Verificação por Parafraseamento" e sugerir pequenos "Desafios" para um aprendizado mais ativo.
+
+### Alterado
+- **Refinamento da Filosofia de Ensino (IA):** O objetivo principal foi aprofundado para focar em uma abordagem "construtivista e socrática", guiando o usuário na construção do conhecimento em vez de apenas entregar respostas.
+- **Personalização e Empatia Aprimoradas (IA):** Conrad agora se lembra das preferências de estilo de explicação do usuário (ex: analogias) dentro de uma mesma sessão e é mais proativo ao oferecer ajuda quando detecta frustração.
+- **Refatoração Completa da Lógica da Interface:** O código foi reestruturado para suportar `ipywidgets`, com uma renderização de HTML/CSS mais sofisticada, incluindo um avatar SVG para o Conrad e barras de rolagem customizadas.
+
 ## [1.4.0] - 30/05/2025
 
 ### Adicionado
