@@ -2,76 +2,138 @@
   <img src="Conrad_Logo.jpg" alt="Logo do Conrad" width="700"/>
 </p>
 
-# Conrad - Seu Assistente Pessoal de Aprendizado com IA 🧠✨
+# Conrad - Seu Assistente Pessoal de Aprendizado com IA
+
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/) [![Google Gemini](https://img.shields.io/badge/Google-Gemini%20API-purple.svg)](https://ai.google.dev/) [![Google Colab](https://img.shields.io/badge/Google%20Colab-notebook-orange.svg)](https://colab.research.google.com/)
 
 **Conrad é um chatbot inteligente projetado para ser um companheiro de aprendizado, utilizando o poder da API Gemini do Google para fornecer explicações claras, engajadoras e personalizadas sobre uma vasta gama de tópicos.**
 
-## 🎯 Sobre o Projeto
+---
 
-Conrad nasceu da ideia de tornar o aprendizado mais acessível, interativo e adaptado às necessidades individuais. Seja você um estudante curioso, um profissional buscando novos conhecimentos ou alguém que simplesmente ama aprender, Conrad está aqui para ajudar a explorar desde conceitos básicos do dia a dia até teorias complexas como a Equação de Drake.
+## 📋 Índice
 
-O foco principal é ensinar de forma simples e aprofundada, evitando jargões técnicos desnecessários, para que o máximo de pessoas consiga aprender e se sentir confiante com novos conhecimentos.
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Funcionalidades Principais](#funcionalidades-principais)
+- [Como Começar](#como-começar-a-usar-o-conrad)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Personalização Avançada](#personalização-avançada)
+- [Histórico de Versões](#histórico-de-versões)
+- [Contribuição](#contribuição)
+- [Desenvolvido por](#desenvolvido-por)
+- [Licença](#licença)
 
-## ✨ Funcionalidades Principais
+---
 
-*   **Explicações Claras e Adaptáveis:** Conrad pode explicar tópicos de diversas formas (simples, elaborada, técnica, intuitiva) e em diferentes níveis de profundidade (iniciante, intermediário, avançado).
-*   **Estratégias de Ensino Diversificadas:**
-    *   **Perguntar de Volta:** Estimula o pensamento crítico e avalia o conhecimento prévio.
-    *   **Resumos e Questionários:** Ajuda na consolidação e revisão do aprendizado.
-    *   **Analogias e Exemplos Práticos:** Torna conceitos abstratos mais concretos e relevantes.
-    *   **Ensino Gradual:** Divide tópicos complexos em partes menores e gerenciáveis.
-    *   **Conexão com Interesses:** Personaliza o aprendizado, tornando-o mais engajador.
-    *   **Feedback Encorajador:** Motiva e orienta o usuário durante o processo.
-    *   **Trilhas de Conhecimento:** Sugere próximos passos lógicos em campos de estudo mais amplos.
-    *   **Metacognição:** Incentiva a reflexão sobre o próprio processo de aprendizado.
-*   **Recomendações Externas:** Pode sugerir vídeos, sites e outros recursos para complementar o aprendizado.
-*   **Interface Interativa em Linha de Comando:** Atualmente implementado para rodar em ambientes como Google Colab.
+##  Sobre o Projeto
 
-## 🛠️ Tecnologias Utilizadas
+Conrad nasceu da ideia de tornar o aprendizado mais acessível, interativo e adaptado às necessidades individuais. Sua missão não é apenas fornecer respostas, mas guiar os usuários em um processo de descoberta, utilizando uma abordagem socrática e construtivista para ajudar a construir um entendimento profundo sobre qualquer assunto.
 
-*   **Python:** Linguagem de programação principal.
-*   **Google Gemini API:** O cérebro por trás da inteligência e capacidade de geração de texto do Conrad (especificamente o modelo `gemini-1.5-flash` ou similar).
-*   **Google Colab:** Ambiente de desenvolvimento e execução principal para este protótipo.
-*   **Bibliotecas Python:**
-    *   `google-generativeai`: Para interagir com a API Gemini.
-    *   `IPython`: Para funcionalidades de display no Colab (`Markdown`, `clear_output`).
-    *   `textwrap`: Para formatação de texto.
+Seja você um estudante curioso, um profissional buscando novos conhecimentos ou alguém que simplesmente ama aprender, Conrad está aqui para ajudar a explorar desde conceitos básicos do dia a dia até teorias complexas como a Equação de Drake.
 
-## 🚀 Como Executar (Exemplo no Google Colab)
+---
 
-1.  **Clone o Repositório (ou crie um novo notebook e copie o código):**
-    ```bash
-    # Se você tiver os arquivos .py, pode clonar
-    # git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO_CONRAD.git
-    # cd SEU_REPOSITORIO_CONRAD
-    ```
-    Para o Google Colab, você provavelmente copiará e colará o conteúdo das células diretamente.
+##  Funcionalidades Principais
 
-2.  **Configure sua Chave da API do Google:**
-    *   No Google Colab, vá em "Segredos" (ícone de chave no painel esquerdo) e adicione um novo segredo chamado `GOOGLE_API_KEY` com o valor da sua chave.
-    *   Certifique-se de que a permissão de acesso ao notebook está habilitada para este segredo.
+- **Interface de Chat Interativa no Colab:** Uma experiência de chat rica e amigável criada com `ipywidgets`, estilizada com CSS e aprimorada com JavaScript, tudo dentro de um notebook.
+- **Pedagogia Socrática:** O Conrad se esforça para fazer perguntas e usar analogias para guiar o raciocínio, em vez de apenas fornecer respostas diretas.
+- **Suporte Multilíngue Dinâmico:** Detecta o idioma do usuário e adapta suas respostas para manter uma conversa fluida e natural.
+- **Geração de Código Avançada:**
+    - Blocos de código com **realce de sintaxe** automático para centenas de linguagens.
+    - Botões para **Copiar** e **Baixar** cada trecho de código.
+    - Indicador visual da linguagem de programação detectada.
+- **Personalização do Modelo de IA:** Inclui uma célula utilitária para listar os modelos Gemini disponíveis e permite a fácil substituição do modelo padrão.
+- **Gerenciamento de Contexto Visível:** Um contador de tokens informa o usuário sobre o uso da janela de contexto da conversa, ajudando a gerenciar sessões de aprendizado mais longas.
+- **Persona Empática e Paciente:** Projetado para reconhecer a frustração do usuário, validar seus sentimentos e proativamente sugerir novas estratégias de aprendizado.
 
-3.  **Instale as Dependências (Célula 1):**
-    ```python
-    !pip -q install google-generativeai
-    ```
+---
 
-4.  **Execute as Células de Configuração (Célula 2 e parte da Célula 4):**
-    *   Célula 2: Contém os imports e a configuração inicial do cliente Gemini, modelo e chave API.
-    *   Início da Célula 4: Contém a definição do `chat_config_conrad` (com o `system_instruction`) e do `text_wrapper`.
+##  Como Começar a usar o Conrad
 
-5.  **Inicie o Chat (Restante da Célula 4):**
-    *   Execute a célula que contém o loop `while True:` para começar a interagir com o Conrad.
-    *   Digite suas perguntas e explore os tópicos! Para sair, digite "fim".
-  
-## 📜 **Histórico de Versões (Changelog):**
+Siga estes passos para ter sua própria instância do Conrad rodando em minutos.
 
-Para um detalhamento de todas as mudanças, novas funcionalidades e correções em cada versão do Conrad, 
-por favor consulte meu arquivo [**CHANGELOG.md**](CHANGELOG.md)
+1.  **Obtenha sua API Key do Google Gemini:**
+    - Acesse o [Google AI Studio](https://aistudio.google.com/).
+    - Clique em "**Get API key**" e crie uma nova chave.
+    - **Copie e guarde esta chave**, você precisará dela no passo 3.
 
-### Feito por Enrico Souza Afonso no dia 17/05/2025.
-### Durante a Imersão Gemini da Alura.
+2.  **Abra o Projeto no Google Colab:**
+    - Clique no botão abaixo para abrir o notebook diretamente no Google Colab.
+      [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/EnricoSouzaAfonso/ImersaoGemini_Alura_Conrad/blob/main/Conrad.ipynb)
 
-### 📄 Licença
-Este projeto está licenciado sob a Creative Commons CC-BY-NC 4.0. Saiba mais [aqui](https://creativecommons.org/licenses/by-nc/4.0/).
+3.  **Configure a API Key:**
+    - No Google Colab que você abriu, clique no ícone de **chave (Secrets)** na barra lateral esquerda.
+    - Crie um novo "secret" com o nome `GOOGLE_API_KEY`.
+    - No campo "Value", cole a sua API Key que você obteve no passo 1.
+    - Certifique-se de que a opção "Acesso do notebook" está ativada.
 
+4.  **Execute as Células:**
+    - **Célula 1 (`!pip install`):** Execute-a primeiro para instalar todas as dependências necessárias.
+    - **Célula 2 (Configuração Inicial):** Execute-a para importar as bibliotecas e configurar a API Key.
+    - **Célula 4 (Interface Principal):** Execute esta célula para iniciar a interface do chat do Conrad.
+    - Agora você pode começar a conversar com o Conrad!
+
+---
+
+##  Tecnologias Utilizadas
+
+- **Backend:** [Python](https://www.python.org/)
+- **IA Generativa:** [API do Google Gemini](https://ai.google.dev/) (padrão atual: `gemini-2.5-flash`)
+- **Ambiente de Execução:** [Google Colab](https://colab.research.google.com/)
+- **Interface Interativa:** [IPython Widgets (ipywidgets)](https://ipywidgets.readthedocs.io/en/stable/)
+- **Processamento de Texto:**
+    - [Markdown2](https://github.com/trentm/python-markdown2): Para converter as respostas em Markdown para HTML.
+    - [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/): Para manipular o HTML e adicionar funcionalidades aos blocos de código.
+    - [Pygments](https://pygments.org/): Para o realce de sintaxe do código.
+
+---
+
+##  Personalização Avançada
+
+O Conrad foi projetado para ser flexível.
+
+### Alterando o Modelo de IA
+
+Se você quiser experimentar um modelo Gemini diferente (por exemplo, um modelo Pro ou uma versão mais recente), pode usar a **Célula 3 (Listar Modelos Disponíveis)**.
+
+1.  Execute a Célula 3.
+2.  Ela listará todos os modelos disponíveis para sua API Key, com seus nomes técnicos e limites.
+3.  Copie o `Nome Técnico` do modelo desejado (ex: `models/gemini-2.5-pro`).
+4.  Na **Célula 2**, cole este nome na variável `model_name_conrad`.
+5.  Reexecute a Célula 2 e a Célula 4 para iniciar o chat com o novo modelo.
+
+### Ajustando a Personalidade do Conrad
+
+A personalidade, regras e todas as estratégias de ensino do Conrad estão definidas na variável `system_instruction_conrad` no topo da **Célula 4**. Você pode editar este longo texto para ajustar seu comportamento, tom ou até mesmo adicionar novas regras e habilidades.
+
+---
+
+##  Histórico de Versões
+
+Para um detalhamento de todas as mudanças, novas funcionalidades e correções em cada versão do Conrad, por favor consulte o arquivo [**CHANGELOG.md**](CHANGELOG.md).
+
+---
+
+##  Contribuição
+
+Contribuições são o que tornam a comunidade de código aberto um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será **muito apreciada**.
+
+1.  **Faça um Fork** do Projeto.
+2.  **Crie sua Branch de Funcionalidade** (`git checkout -b feature/FuncionalidadeIncrivel`).
+3.  **Faça o Commit de suas mudanças** (`git commit -m 'Adiciona uma Funcionalidade Incrível'`).
+4.  **Faça o Push para a Branch** (`git push origin feature/FuncionalidadeIncrivel`).
+5.  **Abra um Pull Request**.
+
+---
+
+##  Desenvolvido por
+
+**Enrico Souza Afonso** no dia 17/05/2025 durante a Imersão Gemini da Alura.
+
+---
+
+##  Licença
+Este projeto está licenciado sob a **Creative Commons CC-BY-NC 4.0**.
+
+[![Licença CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+Você pode saber mais sobre esta licença [aqui](https://creativecommons.org/licenses/by-nc/4.0/).
