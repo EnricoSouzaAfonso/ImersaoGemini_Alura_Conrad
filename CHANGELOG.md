@@ -5,6 +5,11 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
+## [1.5.1] - 10/09/2025
+
+### Corrigido
+- Corrigido um bug crítico causado pela descontinuação do modelo de linguagem `gemini-2.5-flash-preview-04-17-thinking`. O modelo padrão do Conrad foi atualizado para a versão estável `models/gemini-2.5-flash` para garantir a continuidade do serviço.
+
 ## [1.5.0] - 28/06/2025
 
 ### Adicionado
