@@ -58,6 +58,7 @@ Follow these steps to get your own instance of Conrad running in minutes.
 
 2.  **Open the Project in Google Colab:**
     - Click the button below to open the notebook directly in Google Colab.
+      
       [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/EnricoSouzaAfonso/ImersaoGemini_Alura_Conrad/blob/main/Conrad.ipynb)
 
 3.  **Configure the API Key:**
